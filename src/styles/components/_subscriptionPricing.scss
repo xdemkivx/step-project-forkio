@@ -1,0 +1,166 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+.subscriptionPricing {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #4B3B4E;
+  min-width: 320px;
+}
+
+
+.subscriptionPricing_container {
+  width: 100%;
+
+  margin: 0 auto;
+
+  margin-top: -12px;
+  @include flexColumnCenter;
+}
+
+.subscriptionPricing_title {
+  font-family: $font_montserrat;
+  color: $text_primary_color;
+  font-size: 28px;
+  @include flexColumnCenter;
+  padding-top: 15px;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+.subscriptionPricing_item {
+  width: 257px;
+  background-color: #5F5161;
+  @include flexColumnCenter;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  height: 457px;
+}
+
+.subscriptionPricing_item_title {
+  font-family: $font_montserrat;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  @include flexColumnCenter;
+  color: rgba(255, 255, 255, 1);
+  background-color: #695B6A;
+  padding: 36px 0px;
+  width: 100%;
+}
+
+.subscriptionPricing_item_price {
+  font-family: $font_montserrat;
+  font-size: 60px;
+  font-weight: 700;
+  color: $text_primary_color;
+  padding-top: 30px;
+}
+
+.priceText {
+  font-family: $font_montserrat;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text_primary_color;
+  padding-top: 20px;
+  padding-bottom: 38px;
+
+}
+
+.itemLine {
+  &::before {
+    content: " ";
+    width: 60px;
+    height: 5px;
+    background-color: $primary_color;
+    @include flexColumnCenter;
+  }
+}
+
+.subscriptionPricing_item_text {
+  padding-top: 30px;
+  font-family: $font_montserrat;
+  font-size: 16px;
+  color: $text_primary_color;
+  text-align: center;
+  @include flexColumnCenter;
+}
+
+.subscriptionPricing_item_btn {
+  font-family: $font_montserrat;
+  font-size: 15px;
+  color: $text_primary_color;
+  @include flexColumnCenter;
+  padding: 16px 38px;
+  background-color: #776B79;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border-color: #776B79;
+  box-shadow: none;
+  margin-bottom: 67px;
+  border-style: solid;
+  margin-top: 10px;
+}
+
+@media(min-width:$tablet_bp) {
+  .subscriptionPricing_wrap {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 25px 30px;
+    padding-bottom: 97px;
+
+  }
+
+  .subscriptionPricing_item {
+    width: 70%;
+    margin-bottom: 0;
+  }
+
+  .subscriptionPricing_title {
+    font-size: 42px;
+    width: 61%;
+    padding-top: 88px;
+  }
+
+}
+
+.btn_aktive {
+  height: 560px;
+  background-color: #4C3449;
+}
+
+.btn_aktive_title {
+  background-color: #402D41;
+}
+
+.subscriptionPricing_item_btn {
+  width: 61%;
+}
+
+@media(min-width:$desktop_bp) {
+  .subscriptionPricing_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 25px 30px;
+    padding-bottom: 97px;
+
+  }
+
+  .subscriptionPricing_item {
+    width: 80%;
+    margin-bottom: 0;
+  }
+
+  .subscriptionPricing_title {
+    font-size: 54px;
+    padding-top: 118px;
+  }
+
+}

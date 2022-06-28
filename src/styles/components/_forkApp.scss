@@ -1,0 +1,109 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+.fork_app {
+    width: 100%;
+    background: url("../img/img1.png") center no-repeat;
+    background-size: cover;
+    min-width: 320px;
+    margin: 0 auto;
+
+}
+
+.fork_app_container {
+    width: 100%;
+    height: 800px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+}
+
+.fork_app_title {
+    font-family: $font_montserrat;
+    font-size: 48px;
+    font-weight: $font_bold;
+    color: #fff;
+    padding-top: 183px;
+    margin-bottom: 19px;
+}
+
+.fork_app_additional_info_subtitle {
+
+    font-family: $font_montserrat;
+    font-size: 15px;
+    color: rgba(132, 142, 151, 1);
+    text-transform: uppercase;
+
+}
+
+.fork_app_subtitle {
+
+    font-family: $font_montserrat;
+    color: $primary_color;
+    font-size: 18px;
+    font-weight: $font_regular;
+    margin-bottom: 14px;
+}
+
+.fork_app_btn {
+    width: 290px;
+    height: 62px;
+    background-color: $primary_color;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 21px;
+    font-weight: $font_bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 96%;
+    border: none;
+
+    &:hover {
+        background: $text_primary_color;
+        border: 1px solid $primary_color;
+        color: $primary_color;
+    }
+}
+
+@media(min-width:$tablet_bp) {
+
+
+    .fork_app_title {
+        font-size: 72px;
+    }
+
+    .fork_app_subtitle {
+        font-size: 24px;
+        margin-bottom: 19px;
+    }
+
+    .fork_app_btn {
+        width: 390px;
+    }
+
+    .fork_app_additional_info_subtitle {
+        font-size: 14px;
+    }
+
+}
+
+
+@media(min-width:$desktop_bp) {
+    .fork_app {
+        max-width: 1200px;
+    }
+
+    .fork_app_title {
+        font-size: 82px;
+    }
+
+    .fork_app_subtitle {
+        font-size: 30px;
+    }
+
+    .fork_app_additional_info_subtitle {
+        font-size: 16px;
+    }
+}

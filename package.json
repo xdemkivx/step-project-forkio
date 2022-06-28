@@ -1,0 +1,34 @@
+{
+  "name": "step_project_forkio",
+  "version": "1.0.0",
+  "description": "step project FE online Valeriya Vitvytska Vitaliy Demkiv",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gitlab.com/leradent1989/step_project_Forkio"
+  },
+  "keywords": [
+    "gulp",
+    "scss",
+    "mediaquaries"
+  ],
+  "author": "Valeriya Vitvytska Vitaliy Demkiv",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.52.3"
+  },
+  "type": "module"
+}
